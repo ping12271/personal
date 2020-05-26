@@ -462,6 +462,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -544,7 +545,8 @@ h4 {
   background-size: cover;
   background-position: center;
   height: 100vh;
-  display: flex; }
+  display: flex;
+  z-index: 1000; }
   .section-home .black {
     position: absolute;
     top: 0;
@@ -569,17 +571,24 @@ h4 {
         color: #fff; }
 
 .section-about .container {
+  position: relative;
+  z-index: 1200;
   width: 900px;
   background-color: #fff;
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
-  padding: 50px; }
+  padding: 50px;
+  margin-top: -50px; }
+  @media only screen and (max-width: 768px) {
+    .section-about .container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 500px; } }
   .section-about .container .about-title {
     flex-basis: 60%; }
-    @media only screen and (max-width: 768px) {
-      .section-about .container .about-title {
-        text-align: center; } }
     .section-about .container .about-title h2 {
       margin-bottom: 20px; }
     .section-about .container .about-title p {
@@ -616,60 +625,63 @@ h4 {
       background-color: #333333;
       margin: 30px 0;
       display: inline-block; }
-  .section-service .container .service-contents ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 -15px; }
-    .section-service .container .service-contents ul li {
-      flex: 1 1 33.3333%;
-      max-width: 33.3333%;
-      padding: 15px; }
-      @media only screen and (max-width: 768px) {
-        .section-service .container .service-contents ul li {
-          flex: 1 1 50%;
-          max-width: 50%; } }
-      .section-service .container .service-contents ul li .service-list {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-        .section-service .container .service-contents ul li .service-list img {
-          width: 100%;
-          height: 240px; }
-        .section-service .container .service-contents ul li .service-list span {
-          position: absolute;
-          background-color: #fff;
-          border-radius: 3px;
-          padding: 10px 20px; }
-        .section-service .container .service-contents ul li .service-list .screen {
-          position: absolute;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          right: 0;
-          z-index: 100;
-          background-color: #fd735a;
-          padding: 20px;
+  .section-service .container .service-contents {
+    position: relative;
+    z-index: -1; }
+    .section-service .container .service-contents ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0 -15px; }
+      .section-service .container .service-contents ul li {
+        flex: 1 1 33.3333%;
+        max-width: 33.3333%;
+        padding: 15px; }
+        @media only screen and (max-width: 768px) {
+          .section-service .container .service-contents ul li {
+            flex: 1 1 50%;
+            max-width: 50%; } }
+        .section-service .container .service-contents ul li .service-list {
+          position: relative;
           display: flex;
-          flex-direction: column;
           justify-content: center;
-          align-items: center;
-          opacity: 0;
-          transition: .4s;
-          cursor: pointer; }
-          .section-service .container .service-contents ul li .service-list .screen i {
-            font-size: 30px;
-            color: #fff; }
-          .section-service .container .service-contents ul li .service-list .screen h4 {
-            color: #fff;
-            padding: 15px 0; }
-          .section-service .container .service-contents ul li .service-list .screen p {
-            text-align: center;
-            line-height: 1.5;
-            color: #fff; }
-          .section-service .container .service-contents ul li .service-list .screen:hover {
-            opacity: 1; }
+          align-items: center; }
+          .section-service .container .service-contents ul li .service-list img {
+            width: 100%;
+            height: 240px; }
+          .section-service .container .service-contents ul li .service-list span {
+            position: absolute;
+            background-color: #fff;
+            border-radius: 3px;
+            padding: 10px 20px; }
+          .section-service .container .service-contents ul li .service-list .screen {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 100;
+            background-color: #fd735a;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: .4s;
+            cursor: pointer; }
+            .section-service .container .service-contents ul li .service-list .screen i {
+              font-size: 30px;
+              color: #fff; }
+            .section-service .container .service-contents ul li .service-list .screen h4 {
+              color: #fff;
+              padding: 15px 0; }
+            .section-service .container .service-contents ul li .service-list .screen p {
+              text-align: center;
+              line-height: 1.5;
+              color: #fff; }
+            .section-service .container .service-contents ul li .service-list .screen:hover {
+              opacity: 1; }
 
 .section-resume {
   background-color: #f7f7f7;
@@ -749,6 +761,8 @@ h4 {
       padding-left: 15px; }
 
 .section-portfolio {
+  position: relative;
+  z-index: -1;
   margin: 100px 0; }
   .section-portfolio .container .portfolio-title {
     text-align: center; }
@@ -791,6 +805,8 @@ h4 {
         opacity: 1; }
 
 .section-testimonial {
+  position: relative;
+  z-index: -1;
   padding: 100px 0;
   background-color: #f7f7f7; }
   .section-testimonial .container {
@@ -859,7 +875,8 @@ h4 {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  position: relative; }
+  position: relative;
+  z-index: -1; }
   .section-hire .black {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.3);
@@ -892,6 +909,8 @@ h4 {
       cursor: pointer; }
 
 .section-blog {
+  position: relative;
+  z-index: -1;
   padding: 100px 0; }
   .section-blog .container .blog-title {
     text-align: center; }
