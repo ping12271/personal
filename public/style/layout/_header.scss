@@ -1,88 +1,30 @@
 .header {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
+    width: 100%;
+    transform: translateY(-120%);
     background: #fff;
-    height: 70px;
-    overflow: hidden;
+    height: 80px;
+    box-shadow: 0 2px 15px rgba(0,0,0, 0.2);
+    .show-header & {
+    }
     .container {
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .logo {
-        font-size: 20px;
-        text-transform: uppercase;
-        font-weight: 500;
-        display: flex;
-        align-items: center;
-    }
-
-    nav {
-        flex: 1;
-        display: flex;
-        justify-content: flex-end;
-        z-index: 200;
-        @include screen-sm {
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            left: -320px;
-            z-index: 1100;
-            flex-direction: column;
-            justify-content: center;
-            width: 320px;
-            background: #fff;
-            transition:  0.4s;
-            .open-side-menu & {
-                left: 0;
-            }
-        }
-
-        .menu {
-            height: 70px;
-            padding: 0 15px;
-            cursor: pointer;
-            color: #333;
-
+        .main-header {
+            height: 80px;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-
-            &:hover {
-                color: #000;
+            h1 {
+                font-size: 2em;
+            }
+            nav {
+                ul {
+                    display: flex;
+                    li {
+                        padding: 15px;
+                        cursor: pointer;
+                    }
+                }
             }
         }
     }
-
-    .screen {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 100;
-        background: rgba(0, 0, 0, 0.6);
-        display: none;
-        .open-side-menu & {
-            display: block;
-        }
-    }
-
-    .btn-menu {
-        font-size: 26px;
-        color: #333;
-        display: none;
-        cursor: pointer;
-        @include screen-sm {
-            display: flex;
-            align-items: center;
-            padding: 0 10px;
-        }
-    }
-
 }
-

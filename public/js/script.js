@@ -1,3 +1,4 @@
+
 // ready 함수 - dom이 렌더링 된후에 마지막으로 실행된다.
 // dom 이란 document object model로 html을 말한다.
 $(function () {
@@ -9,6 +10,7 @@ var portfolio = {
     init: function () {
         portfolio.handleSideMenu();
         portfolio.getScroll();
+        portfolio.backTop();
     },
 
     handleSideMenu: function () {
@@ -29,12 +31,17 @@ var portfolio = {
     getScroll: function () {
         $(window).on("scroll", function () {
             var scrollTop = $(window).scrollTop();
-            console.log("@@ scrollTop", scrollTop);
-
+            var sectionHomeHeight = $('.section-home').innerHeight();
             if(scrollTop > 180) {
                 $("html").addClass("get-scroll");
             } else {
                 $("html").removeClass("get-scroll");
+            }
+
+            if(scrollTop > sectionHomeHeight) {
+                $("html").addClass("show-header")
+            } else {
+                $("html").removeClass("show-header")
             }
 
             if(scrollTop > 600) {
@@ -45,10 +52,12 @@ var portfolio = {
         })
     },
 
+    backTop: function () {
+        $('.back-top').on('click', function () {
+            $('html, body').animate({
+                scrollTop:0
+            })
+        })
+    }
+
 }
-
-
-
-
-
-
