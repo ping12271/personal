@@ -4,75 +4,57 @@
     <%- include components/head %>
 </head>
 <body>
-    <%- include components/nav %>
+
     <div id="wrap">
-        <!--header-->
-        <header class="header">
-            <div class="container">
-                <div class="logo">logo
-                    <img src="#!" alt="">
-                </div>
-                <nav>
-                    <div class="menu">HOME</div>
-                    <div class="menu">SERVICE</div>
-                    <div class="menu">EXPERTISES</div>
-                    <div class="menu">WORKS</div>
-                    <div class="menu">BLOG</div>
-                    <div class="menu">CONTACT</div>
-                </nav>
-                <div class="slider-menu">
-                    <h1>BRAND LOGO</h1>
-                    <ul>
-                        <li>HOME</li>
-                        <li>SERVICE</li>
-                        <li>EXPERTISES</li>
-                        <li>WORKS</li>
-                        <li>BLOG</li>
-                        <li>CONTACT</li>
-                    </ul>
-                    <div class="btn-menu">
-                        <i class="fa fa-cog"></i>
-                    </div>
-                </div>
-            </div>
-        </header>
+
+        <%- include components/header %>
+
         <!--home-->
         <section class="section section-home">
             <div class="container">
                 <div class="black"></div>
                 <div class="home-title">
                     <h4>HELLO, I AM</h4>
-                    <h1>Justin Lee</h1>
+                    <h1>
+                        Justin Lee
+                        <div class="shadow-line line"></div>
+                    </h1>
                 </div>
             </div>
         </section>
+
+
         <!--about-->
         <section class="section section-about">
             <div class="container">
-                <div class="about-title">
-                    <h2>About Me</h2>
-                    <p>
-                        Passionate designer & developer who loves simplicity in things and crafts beautiful user interfaces with love.
-                    </p>
-                    <div class="about-social">
-                        <a href="#!"><i class="fa fa-facebook"></i></a>
-                        <a href="#!"><i class="fa fa-linkedin"></i></a>
-                        <a href="#!"><i class="fa fa-dribbble"></i></a>
-                        <a href="#!"><i class="fa fa-dribbble"></i></a>
+                <div class="bio">
+                    <div class="about-title">
+                        <h2>About Me</h2>
+                        <p>
+                            Passionate designer & developer who loves simplicity in things and crafts beautiful user interfaces with love.
+                        </p>
+                        <div class="sns-links">
+                            <a href="#!"><i class="fa fa-facebook"></i></a>
+                            <a href="#!"><i class="fa fa-linkedin"></i></a>
+                            <a href="#!"><i class="fa fa-dribbble"></i></a>
+                            <a href="#!"><i class="fa fa-dribbble"></i></a>
+                        </div>
                     </div>
-                </div>
-                <div class="about-cover">
-                    <img class="about-cover" src="/public/images/avatar1.jpg" alt="">
+                    <div class="about-cover">
+                        <img class="about-cover" src="/public/images/avatar1.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </section>
         <!--service-->
         <section class="section section-service">
             <div class="container">
-                <div class="service-title">
-                    <span>WHAT I DO</span>
-                    <h2>MY SERVICES</h2>
-                    <div class="bar"></div>
+                <div class="title-area">
+                    <p>WHAT I DO</p>
+                    <h2>
+                        MY SERVICES
+                        <div class="shadow-line line"></div>
+                    </h2>
                 </div>
                 <div class="service-contents">
                     <ul>
@@ -149,10 +131,12 @@
         <!--resume-->
         <section class="section section-resume">
             <div class="container">
-                <div class="resume-title">
-                    <span>MY RESUME</span>
-                    <h2>MY EXPERTISES</h2>
-                    <div class="bar"></div>
+                <div class="title-area">
+                    <p>MY RESUME</p>
+                    <h2>
+                        MY EXPERTISES
+                        <div class="shadow-line line"></div>
+                    </h2>
                 </div>
                 <div class="resume-contents">
                     <div class="resume-experience">
@@ -274,9 +258,11 @@
         <section class="section section-portfolio">
             <div class="container">
                 <div class="portfolio-title">
-                    <span>PORTFOLIO</span>
-                    <h2>MY WORKS</h2>
-                    <div class="bar"></div>
+                    <p>PORTFOLIO</p>
+                    <h2>
+                        MY WORKS
+                        <div class="shadow-line line"></div>
+                    </h2>
                 </div>
                 <div class="gallery-container">
                     <div class="swiper-wrapper">
@@ -327,8 +313,10 @@
             <div class="container">
                 <div class="testimonial-title">
                     <span>KIND WORDS</span>
-                    <h2>TESTIMONIAL</h2>
-                    <div class="bar"></div>
+                    <h2>
+                        TESTIMONIAL
+                        <div class="shadow-line line"></div>
+                    </h2>
                 </div>
                 <div class="testimonial-container">
                     <div class="swiper-wrapper">
@@ -362,8 +350,10 @@
             <div class="black"></div>
             <div class="container">
                 <div class="hire-desc">
-                    <span>LET'S WORK TOGETHER!</span>
-                    <div class="bar"></div>
+                    <p>
+                        LET'S WORK TOGETHER!
+                        <div class="shadow-line line"></div>
+                    </p>
                     <div class="hire-btn">HIRE ME!</div>
                 </div>
             </div>
@@ -372,9 +362,11 @@
         <section class="section section-blog">
             <div class="container">
                 <div class="blog-title">
-                    <span>BLOG</span>
-                    <h2>MY ARTICLES</h2>
-                    <div class="bar"></div>
+                    <p>BLOG</p>
+                    <h2>
+                        MY ARTICLES
+                        <div class="shadow-line line"></div>
+                    </h2>
                 </div>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
@@ -457,9 +449,11 @@
         <section class="section section-contact">
             <div class="container">
                 <div class="contact-title">
-                    <span>SAY HELLO</span>
-                    <h2>CONTACT</h2>
-                    <div class="bar"></div>
+                    <p>SAY HELLO</p>
+                    <h2>
+                        CONTACT
+                        <div class="shadow-line line"></div>
+                    </h2>
                 </div>
                 <div class="contact-location">
                     <h4>My Location</h4>

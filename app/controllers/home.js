@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
+
 // define the home page route
 router.get('/', async function(req, res) {
     res.render('home', {
@@ -8,6 +9,5 @@ router.get('/', async function(req, res) {
         description: 'main page'
     })
 });
-
 
 module.exports = router;

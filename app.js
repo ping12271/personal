@@ -44,6 +44,7 @@ app.set('trust proxy', true);
 
 route(app);
 
-app.listen(8080, () => {
-    console.log(`server is running on port 8080`)
+const PORT = 8080;
+app.listen(PORT, () => {
+    console.log(`server is running on port ${PORT}`)
 });
