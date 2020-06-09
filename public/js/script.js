@@ -11,6 +11,8 @@ var portfolio = {
         portfolio.handleSideMenu();
         portfolio.getScroll();
         portfolio.backTop();
+        portfolio.scrollTo();
+        blog.visualSlide();
     },
 
     handleSideMenu: function () {
@@ -58,6 +60,50 @@ var portfolio = {
                 scrollTop:0
             })
         })
-    }
+    },
+
+    scrollTo: function () {
+        $('.main-header li').on('click', function () {
+            var menuIndex = $(this).index();
+            var sectionOffset = $('.scroll').eq(menuIndex).offset();
+            console.log('@@ sectionOffset', sectionOffset);
+            var offsetTop = sectionOffset.top;
+            console.log("@@ offsetTop", offsetTop);
+            $('html, body').animate({
+                scrollTop: offsetTop -60
+            }, 600)
+        })
+    },
+
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

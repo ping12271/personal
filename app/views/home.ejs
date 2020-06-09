@@ -10,7 +10,7 @@
         <%- include components/header %>
 
         <!--home-->
-        <section class="section section-home">
+        <section class="section section-home scroll">
             <div class="container">
                 <div class="black"></div>
                 <div class="home-title">
@@ -47,7 +47,7 @@
             </div>
         </section>
         <!--service-->
-        <section class="section section-service">
+        <section class="section section-service scroll">
             <div class="container">
                 <div class="title-area">
                     <p>WHAT I DO</p>
@@ -118,7 +118,7 @@
                                 <img src="/public/images/services6.jpg" alt="">
                                 <span>Analytics</span>
                                 <div class="screen">
-                                    <i class="fa fa-chart-bar"></i>
+                                    <i class="far fa-chart-bar"></i>
                                     <h4>Analytics</h4>
                                     <p>Modern and mobile-ready website that will help of your marketing.</p>
                                 </div>
@@ -129,7 +129,7 @@
             </div>
         </section>
         <!--resume-->
-        <section class="section section-resume">
+        <section class="section section-resume scroll">
             <div class="container">
                 <div class="title-area">
                     <p>MY RESUME</p>
@@ -255,7 +255,7 @@
             </div>
         </section>
         <!--portfolio-->
-        <section class="section section-portfolio">
+        <section class="section section-portfolio scroll">
             <div class="container">
                 <div class="portfolio-title">
                     <p>PORTFOLIO</p>
@@ -264,47 +264,43 @@
                         <div class="shadow-line line"></div>
                     </h2>
                 </div>
-                <div class="gallery-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                <div class="gallery-slideshow">
+                    <div class="gallery-slides">
+                        <div class="gallery-item">
                             <img src="/public/images/p1-1.jpg" alt="">
                             <div class="screen">The Wall<br>slideshow</div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="/public/images/p2-2.jpg" alt="">
-                            <div class="screen">The Wall<br>slideshow</div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/public/images/p3-3.jpg" alt="">
-                            <div class="screen">The Wall<br>slideshow</div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/public/images/p4-4.jpg" alt="">
-                            <div class="screen">The Wall<br>slideshow</div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/public/images/p5-5.jpg" alt="">
-                            <div class="screen">The Wall<br>slideshow</div>
-                        </div>
-                        <div class="swiper-slide">
+                    </div>
+                    <div class="gallery-slides">
+                        <div class="gallery-item">
                             <img src="/public/images/p6-6.jpg" alt="">
                             <div class="screen">The Wall<br>slideshow</div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="/public/images/p7-7.jpg" alt="">
-                            <div class="screen">The Wall<br>slideshow</div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/public/images/p8-8.jpg" alt="">
-                            <div class="screen">The Wall<br>slideshow</div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/public/images/p9-9.jpg" alt="">
+                    </div>
+                    <div class="gallery-slides">
+                        <div class="gallery-item">
+                            <img src="/public/images/p2-2.jpg" alt="">
                             <div class="screen">The Wall<br>slideshow</div>
                         </div>
                     </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
+                    <div class="gallery-slides">
+                        <div class="gallery-item">
+                            <img src="/public/images/p3-3.jpg" alt="">
+                            <div class="screen">The Wall<br>slideshow</div>
+                        </div>
+                    </div>
+                    <div class="gallery-slides">
+                        <div class="gallery-item">
+                            <img src="/public/images/p4-4.jpg" alt="">
+                            <div class="screen">The Wall<br>slideshow</div>
+                        </div>
+                    </div>
+                    <div class="gallery-slides">
+                        <div class="gallery-item">
+                            <img src="/public/images/p5-5.jpg" alt="">
+                            <div class="screen">The Wall<br>slideshow</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -318,30 +314,32 @@
                         <div class="shadow-line line"></div>
                     </h2>
                 </div>
-                <div class="testimonial-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="item">
-                                <img src="/public/images/avatar1.jpg" alt="">
-                                <p>
-                                    Accusantium, adipisci assumenda culpa esse facere facilis illum magnam modi necessitatibus non omnis quasi qui quidem quos repellendus ullam vel voluptatem! Itaque.
-                                </p>
-                                <h6>- Anj josebh, Web Develper</h6>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="item">
-                                <img src="/public/images/avatar1.jpg" alt="">
-                                <p>
-                                    Accusantium, adipisci assumenda culpa esse facere facilis illum magnam modi necessitatibus non omnis quasi qui quidem quos repellendus ullam vel voluptatem! Itaque.
-                                </p>
-                                <h6>- Anj josebh, Web Develper</h6>
-                            </div>
+                <!-- Slick -->
+                <div class="testimonial-slideshow">
+                    <div class="testimonial-slide">
+                        <div class="testimonial-item">
+                            <img src="/public/images/avatar.jpg" alt="">
+                            <p>
+                                "Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse."
+                            </p>
+                            <h6>- Anj Joseph, Web Developer</h6>
                         </div>
                     </div>
-                    <!-- Add Arrows -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-item">
+                            <img src="/public/images/avatar1.jpg" alt="">
+                            <p>
+                                "Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse."
+                            </p>
+                            <h6>- Anj Joseph, Web Developer</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-arrows slick-prev">
+                    <img src="/public/images/arrow_prev.svg" alt="">
+                </div>
+                <div class="slick-arrows slick-next">
+                    <img src="/public/images/arrow_next.svg" alt="">
                 </div>
             </div>
         </section>
@@ -359,7 +357,7 @@
             </div>
         </section>
         <!--bolg-->
-        <section class="section section-blog">
+        <section class="section section-blog scroll">
             <div class="container">
                 <div class="blog-title">
                     <p>BLOG</p>
@@ -368,85 +366,73 @@
                         <div class="shadow-line line"></div>
                     </h2>
                 </div>
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="box-group">
-                                <div class="blog-item">
-                                    <div class="blog-thumb">
-                                        <img src="/public/images/blog-1.jpg" alt="">
-                                        <div class="screen">Alice Joseph<br>2 Mins Read</div>
-                                    </div>
-                                    <div class="blog-desc">
-                                        <span>Lorem ipsum dolor sit amet, consectetur</span>
-                                        <h6>Design</h6>
-                                    </div>
-                                </div>
-                                <div class="blog-item">
-                                    <div class="blog-thumb">
-                                        <img src="/public/images/blog-2.jpg" alt="">
-                                        <div class="screen">Alice Joseph<br>2 Mins Read</div>
-                                    </div>
-                                    <div class="blog-desc">
-                                        <span>Lorem ipsum dolor sit amet, consectetur</span>
-                                        <h6>Design</h6>
-                                    </div>
-                                </div>
-                                <div class="blog-item">
-                                    <div class="blog-thumb">
-                                        <img src="/public/images/blog-3.jpg" alt="">
-                                        <div class="screen">Alice Joseph<br>2 Mins Read</div>
-                                    </div>
-                                    <div class="blog-desc">
-                                        <span>Lorem ipsum dolor sit amet, consectetur</span>
-                                        <h6>Design</h6>
-                                    </div>
-                                </div>
+                <div class="blog-slideshow">
+                    <div class="blog-slide">
+                        <div class="blog-item">
+                            <div class="thumb">
+                                <img src="/public/images/blog-1.jpg" alt="">
+                                <div class="screen">Alice Joseph<br>2 Mins Read</div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="box-group">
-                                <div class="blog-item">
-                                    <div class="blog-thumb">
-                                        <img src="/public/images/blog-3.jpg" alt="">
-                                        <div class="screen">Alice Joseph<br>2 Mins Read</div>
-                                    </div>
-                                    <div class="blog-desc">
-                                        <span>Lorem ipsum dolor sit amet, consectetur</span>
-                                        <h6>Design</h6>
-                                    </div>
-                                </div>
-                                <div class="blog-item">
-                                    <div class="blog-thumb">
-                                        <img src="/public/images/blog-2.jpg" alt="">
-                                        <div class="screen">Alice Joseph<br>2 Mins Read</div>
-                                    </div>
-                                    <div class="blog-desc">
-                                        <span>Lorem ipsum dolor sit amet, consectetur</span>
-                                        <h6>Design</h6>
-                                    </div>
-                                </div>
-                                <div class="blog-item">
-                                    <div class="blog-thumb">
-                                        <img src="/public/images/blog-1.jpg" alt="">
-                                        <div class="screen">Alice Joseph<br>2 Mins Read</div>
-                                    </div>
-                                    <div class="blog-desc">
-                                        <span>Lorem ipsum dolor sit amet, consectetur</span>
-                                        <h6>Design</h6>
-                                    </div>
-                                </div>
+                            <div class="desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                <h6>Design</h6>
                             </div>
                         </div>
                     </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
+                    <div class="blog-slide">
+                        <div class="blog-item">
+                            <div class="thumb">
+                                <img src="/public/images/blog-2.jpg" alt="">
+                                <div class="screen">Alice Joseph<br>2 Mins Read</div>
+                            </div>
+                            <div class="desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                <h6>Design</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-slide">
+                        <div class="blog-item">
+                            <div class="thumb">
+                                <img src="/public/images/blog-3.jpg" alt="">
+                                <div class="screen">Alice Joseph<br>2 Mins Read</div>
+                            </div>
+                            <div class="desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                <h6>Design</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-slide">
+                        <div class="blog-item">
+                            <div class="thumb">
+                                <img src="/public/images/blog-2.jpg" alt="">
+                                <div class="screen">Alice Joseph<br>2 Mins Read</div>
+                            </div>
+                            <div class="desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                <h6>Design</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-slide">
+                        <div class="blog-item">
+                            <div class="thumb">
+                                <img src="/public/images/blog-3.jpg" alt="">
+                                <div class="screen">Alice Joseph<br>2 Mins Read</div>
+                            </div>
+                            <div class="desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                <h6>Design</h6>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="blog-btn"><a href="#!">VIEW MORE</a></div>
             </div>
         </section>
         <!--contact-->
-        <section class="section section-contact">
+        <section class="section section-contact scroll">
             <div class="container">
                 <div class="contact-title">
                     <p>SAY HELLO</p>
@@ -506,6 +492,27 @@
         </footer>
         <div class="back-top">T</div>
     </div>
+
+<!--  slick  -->
+    <script>
+        $(".testimonial-slideshow").slick({
+            prevArrow: $(".slick-prev"),
+            nextArrow: $(".slick-next"),
+        }),
+            $('.blog-slideshow').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                arrows: false,
+                dots: true,
+            }),
+            $('.gallery-slideshow').slick({
+                centerMode: true,
+                centerPadding: '80px',
+                slidesToShow: 3,
+                arrows: false,
+            });
+    </script>
     <%- include('components/header', {title: title, description: description}) %>
 </body>
 </html>
