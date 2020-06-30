@@ -12,7 +12,6 @@ var portfolio = {
         portfolio.getScroll();
         portfolio.backTop();
         portfolio.scrollTo();
-        blog.visualSlide();
     },
 
     handleSideMenu: function () {
